@@ -9,6 +9,9 @@ var reverse = function (N) {
     }
     return parseInt(reversedN);
 };
-var N = 3567.65;
+var N = 32327912929;
+/** second solution */
+var reverse2 = function (n) { return parseInt(N.toString().split("").reverse().join('')); };
 console.log("x = " + N);
 console.log("Output = " + reverse(N));
+console.log("Output = " + reverse2(N));
