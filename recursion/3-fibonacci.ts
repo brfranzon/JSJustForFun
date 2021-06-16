@@ -15,4 +15,8 @@ const fibonacci = (n: number): number => {
 
 }
 
-console.log(fibonacci(100))
+const start = performance.now();
+console.log(fibonacci(10))
+const end = performance.now();
+
+console.log(`Time: ${start - end}`)

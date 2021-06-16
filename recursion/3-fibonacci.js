@@ -10,4 +10,7 @@ var fibonacci = function (n) {
         return 1;
     return fibonacci(n - 1) + fibonacci(n - 2);
 };
+var start = performance.now();
 console.log(fibonacci(100));
+var end = performance.now();
+console.log("Time: " + (start - end));
